@@ -31,7 +31,7 @@ textarea:focus,
    height: auto;
 }
 
-.card:hover{
+#products .card:hover{
    box-shadow: 5px 5px 5px #CFD8DC ;
    transform: scale(1.03);
    transition: ease-in-out;
@@ -43,3 +43,44 @@ textarea:focus,
 #footer a:hover{
    color: #f1595a;
 }
+
+/* whatsapp */
+
+.chat{
+   position: fixed !important;
+   right: 0px !important;
+   bottom: 0px !important;
+   z-index: 5;
+   margin-right: 10px;
+   margin-bottom: 90px;
+}
+
+.chat input:focus{
+   outline: none;
+}
+
+.chat #close:focus{
+   transform: scale(1.03);
+   outline: none;
+}
+
+
+
+.whatsapp {
+   position: fixed;
+   right: 0px;
+   bottom: 0px;
+   padding-right: 5px;
+   z-index: 5;
+}
+.whatsapp h5 :hover{
+   transform: scale(1.1);
+}
+.whatsapp h5 {
+   color: #20b20f;
+  
+}
+
+.media:hover{
+   transform: scale(1);
+ }

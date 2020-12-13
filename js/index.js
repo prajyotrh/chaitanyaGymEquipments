@@ -1,5 +1,6 @@
 /* contact form*/
 $("form").submit(function(){
+  alert()
     var post = $('form').serialize();
     $('#submit').addClass('disabled');
   
@@ -25,3 +26,21 @@ $("form").submit(function(){
   return false;
   });
   
+/* whatsapp chat */
+document.getElementById('chat').style.display= "none";
+window.onload = function(){
+  document.getElementById('chat').style.display= "none";
+document.getElementById('whatsapp').addEventListener("click",function(){
+  document.getElementById('chat').style.display ="block";
+});
+
+document.getElementById('close').addEventListener("click",function(){
+  document.getElementById('chat').style.display="none";
+});
+
+
+document.getElementById('send').addEventListener("click",function(){
+  var msg = document.getElementById('msg').value;
+  window.location="https://api.whatsapp.com/send/?phone=918857058202&text="+msg;
+});
+}
