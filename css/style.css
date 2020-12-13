@@ -70,7 +70,7 @@ textarea:focus,
    position: fixed;
    right: 0px;
    bottom: 0px;
-   padding-right: 5px;
+   padding-right: 15px;
    z-index: 5;
 }
 .whatsapp h5 :hover{

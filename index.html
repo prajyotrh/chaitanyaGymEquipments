@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>Standard Template</title>
+  <title>Chaitanya Gym</title>
   <!-- meta tags -->
   <meta http-equiv="content-type" content="text/html;charset=UTF-8" />
   <meta charset="utf-8">
@@ -61,21 +61,21 @@
             
         </div>
         <div class="card-body" style="background-image: url('images/whatsapp-bg.png');">
-            
-            <div class="card pl-4 pr-4 pt-2 pb-2"  style="border-radius: 10px;width: fit-content;">
-                <div class="row" style="font-weight: 600;">
-                    Chaitanya Gym
+                
+                <div class="card pl-4 pr-4 pt-2 pb-2"  style="border-radius: 10px;width: fit-content;">
+                    <div class="row" style="font-weight: 600;">
+                        Chaitanya Gym
+                    </div>
+                    <div class="row">
+                        Welcome to Chaitanya Gym Equipments.
+                    </div>
+                    <div class="row">
+                        Have any queries ?<br>
+                        feel free to contact us.
+                    </div>
                 </div>
-                <div class="row">
-                    Welcome to Chaitanya Gym Equipments.
-                </div>
-                <div class="row">
-                    Have any queries ?<br>
-                    feel free to contact us.
-                </div>
-            </div>
         </div>
-        <div class="card-footer text-muted bg-white" style="padding-left: 20px!important;">
+    <div class="card-footer text-muted bg-white" style="padding-left: 20px!important;">
             <div class="row pb-0">
                 <div class="col-9"><input type="text" class="form-control " style="border-radius: 20px;" id="msg" aria-describedby="helpId" placeholder="Type message..."></div>
                 <div class="col-3"><button id="send" type="button" class="btn btn-info" style="border-radius: 100%; background-color: #095e54;"><img src="images/send (2).svg" height="24px"  alt=""></button></div>
@@ -84,8 +84,36 @@
     </div>
 
     
-      <div class="whatsapp" id="whatsapp">
+    <div class="whatsapp" id="whatsapp">
         <h5><img src="images/whatsapp.svg" alt=""></h5>
+    </div>
+
+    <!-- facebook -->
+    <!-- Load Facebook SDK for JavaScript -->
+    <div id="fb-root"></div>
+    <script>
+      window.fbAsyncInit = function() {
+        FB.init({
+          xfbml            : true,
+          version          : 'v9.0'
+        });
+      };
+
+      (function(d, s, id) {
+      var js, fjs = d.getElementsByTagName(s)[0];
+      if (d.getElementById(id)) return;
+      js = d.createElement(s); js.id = id;
+      js.src = 'https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js';
+      fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));</script>
+
+    <!-- Your Chat Plugin code -->
+    <div class="fb-customerchat"
+      attribution=setup_tool
+      page_id="106313154687492"
+    theme_color="#ff7e29"
+    logged_in_greeting=" Welcome to Chaitanya Gym Equipment. How can we help you?"
+    logged_out_greeting=" Welcome to Chaitanya Gym Equipment. How can we help you?">
     </div>
 
     <div class="wrapper">
