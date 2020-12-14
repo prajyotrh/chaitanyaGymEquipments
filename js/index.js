@@ -1,7 +1,7 @@
 /* contact form*/
 $("form").submit(function(){
-  alert()
     var post = $('form').serialize();
+ 
     $('#submit').addClass('disabled');
   
     $.post('php/send.php', post, function(data){

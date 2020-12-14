@@ -1,6 +1,10 @@
 *{
     scroll-behavior: smooth;
 }
+
+.navbar-nav a:hover{
+   color: #FF3D00 !important;
+}
 form input,textarea{
     border-radius: 0px !important;
     border-top: none !important;
@@ -44,6 +48,8 @@ textarea:focus,
    color: #f1595a;
 }
 
+
+
 /* whatsapp */
 
 .chat{
@@ -84,3 +90,4 @@ textarea:focus,
 .media:hover{
    transform: scale(1);
  }
+
